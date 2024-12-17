@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Com</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Buy</h1>
+        <a href="#cart">Cart</a>
+    </header>
+    <div class="main-container">
+        <div class="items">
+            <div>
+                <img src="b1.jpg" alt="">
+                <input type="button" id="item1" value="Brown Erri Embroidered Bag ">
+                <br>
+                <label>Tk</label>
+                <input type="button" id="cost1" value="3328.57">
+                <section class="cal">
+                    <input type="button" value="-" onclick="cost1.value=(parseFloat(cost1.value)-3328.57).toFixed(2); quantity1.value=parseInt(quantity1.value)-1">
+                    <input type="button" id="quantity1" value="1">
+                    <input type="button" value="+" onclick="cost1.value=(parseFloat(cost1.value)+3328.57).toFixed(2); quantity1.value=parseInt(quantity1.value)+1">
+                </section>
+                <input id="add" type="button" value="Add to Cart" onclick="
+                bag.value+=item1.value+'\n'; piece.value+=quantity1.value+'\n'; 
+                price.value+=cost1.value+'\n'; 
+                final.value=(parseFloat(final.value)+parseFloat(cost1.value)).toFixed(2)+'\n(7% vat) +'+((parseFloat(final.value)+parseFloat(cost1.value))*0.07).toFixed(2)+'\n\nTotal Payable: '+(parseFloat(final.value)+parseFloat(cost1.value)+(parseFloat(final.value)+parseFloat(cost1.value))*0.07).toFixed(2);">
+            </div>
+            <div>
+                <img src="b2.jpg" alt="">
+                <input type="button" id="item2" value="Black Erri Embroidered Bag ">
+                <br>
+                <label>Tk</label>
+                <input type="button" id="cost2" value="3328.57">
+                <section class="cal">
+                    <input type="button" value="-" onclick="cost2.value=(parseFloat(cost2.value)-3328.57).toFixed(2); quantity2.value=parseInt(quantity2.value)-1">
+                    <input type="button" id="quantity2" value="1">
+                    <input type="button" value="+" onclick="cost2.value=(parseFloat(cost2.value)+3328.57).toFixed(2); quantity2.value=parseInt(quantity2.value)+1">
+                </section>
+                <input id="add" type="button" value="Add to Cart" onclick="
+                bag.value+=item2.value+'\n'; piece.value+=quantity2.value+'\n'; 
+                price.value+=cost2.value+'\n'; 
+                final.value=(parseFloat(final.value)+parseFloat(cost2.value)).toFixed(2)+'\n(7% vat) +'+((parseFloat(final.value)+parseFloat(cost2.value))*0.07).toFixed(2)+'\n\nTotal Payable: '+(parseFloat(final.value)+parseFloat(cost2.value)+(parseFloat(final.value)+parseFloat(cost2.value))*0.07).toFixed(2);">
+            </div>
+            <div>
+                <img src="b3.jpg" alt="">
+                <input type="button" id="item3" value="Green Velvet Bag ">
+                <br>
+                <label>Tk</label>
+                <input type="button" id="cost3" value="838.10">
+                <section class="cal">
+                    <input type="button" value="-" onclick="cost3.value=(parseFloat(cost3.value)-838.10).toFixed(2); quantity3.value=parseInt(quantity3.value)-1">
+                    <input type="button" id="quantity3" value="1">
+                    <input type="button" value="+" onclick="cost3.value=(parseFloat(cost3.value)+838.10).toFixed(2); quantity3.value=parseInt(quantity3.value)+1">
+                </section>
+                <input id="add" type="button" value="Add to Cart" onclick="
+                bag.value+=item3.value+'\n'; piece.value+=quantity3.value+'\n'; 
+                price.value+=cost3.value+'\n'; 
+                final.value=(parseFloat(final.value)+parseFloat(cost3.value)).toFixed(2)+'\n(7% vat) +'+((parseFloat(final.value)+parseFloat(cost3.value))*0.07).toFixed(2)+'\n\nTotal Payable: '+(parseFloat(final.value)+parseFloat(cost3.value)+(parseFloat(final.value)+parseFloat(cost3.value))*0.07).toFixed(2);">
+            </div>
+            <div>
+                <img src="b4.jpg" alt="">
+                <input type="button" id="item4" value="Grey Genuine Leather Purse">
+                <br>
+                <label>Tk</label>
+                <input type="button" id="cost4" value="1557.14">
+                <section class="cal">
+                    <input type="button" value="-" onclick="cost4.value=(parseFloat(cost4.value)-1557.14).toFixed(2); quantity4.value=parseInt(quantity4.value)-1">
+                    <input type="button" id="quantity4" value="1">
+                    <input type="button" value="+" onclick="cost4.value=(parseFloat(cost4.value)+1557.1).toFixed(2); quantity4.value=parseInt(quantity4.value)+1">
+                </section>
+                <input id="add" type="button" value="Add to Cart" onclick="
+                bag.value+=item4.value+'\n'; piece.value+=quantity4.value+'\n'; 
+                price.value+=cost4.value+'\n'; 
+                final.value=(parseFloat(final.value)+parseFloat(cost4.value)).toFixed(2)+'\n(7% vat) +'+((parseFloat(final.value)+parseFloat(cost4.value))*0.07).toFixed(2)+'\n\nTotal Payable: '+(parseFloat(final.value)+parseFloat(cost4.value)+(parseFloat(final.value)+parseFloat(cost4.value))*0.07).toFixed(2);">
+            </div>
+            <div>
+                <img src="b5.jpg" alt="">
+                <input type="button" id="item5" value="Maroon Leather Ladies Bag">
+                <br>
+                <label>Tk</label>
+                <input type="button" id="cost5" value="2219.05">
+                <section class="cal">
+                    <input type="button" value="-" onclick="cost5.value=(parseFloat(cost5.value)-2219.05).toFixed(2); quantity5.value=parseInt(quantity5.value)-1">
+                    <input type="button" id="quantity5" value="1">
+                    <input type="button" value="+" onclick="cost5.value=(parseFloat(cost5.value)+2219.05).toFixed(2); quantity5.value=parseInt(quantity5.value)+1">
+                </section>
+                <input id="add" type="button" value="Add to Cart" onclick="
+                bag.value+=item5.value+'\n'; piece.value+=quantity5.value+'\n'; 
+                price.value+=cost5.value+'\n'; 
+                final.value=(parseFloat(final.value)+parseFloat(cost5.value)).toFixed(2)+'\n(7% vat) +'+((parseFloat(final.value)+parseFloat(cost5.value))*0.07).toFixed(2)+'\n\nTotal Payable: '+(parseFloat(final.value)+parseFloat(cost5.value)+(parseFloat(final.value)+parseFloat(cost5.value))*0.07).toFixed(2);">
+            </div>
+            <div>
+                <img src="b6.jpg" alt="">
+                <input type="button" id="item6" value="Blue-Grey Genuine Leather Bag">
+                <br>
+                <label>Tk</label>
+                <input type="button" id="cost6" value="1852.38">
+                <section class="cal">
+                    <input type="button" value="-" onclick="cost6.value=(parseFloat(cost6.value)-1852.38).toFixed(2); quantity6.value=parseInt(quantity6.value)-1">
+                    <input type="button" id="quantity6" value="1">
+                    <input type="button" value="+" onclick="cost6.value=(parseFloat(cost6.value)+1852.38).toFixed(2); quantity6.value=parseInt(quantity6.value)+1">
+                </section>
+                <input id="add" type="button" value="Add to Cart" onclick="
+                bag.value+=item6.value+'\n'; piece.value+=quantity6.value+'\n'; 
+                price.value+=cost6.value+'\n'; 
+                final.value=(parseFloat(final.value)+parseFloat(cost6.value)).toFixed(2)+'\n(7% vat) +'+((parseFloat(final.value)+parseFloat(cost6.value))*0.07).toFixed(2)+'\n\nTotal Payable: '+(parseFloat(final.value)+parseFloat(cost6.value)+(parseFloat(final.value)+parseFloat(cost6.value))*0.07).toFixed(2);">
+            </div>
+        </div>
+        <div class="cart" id="cart">
+            <div class="cart-bar">
+                <div>Item Name</div>
+                <div>Quantity</div>
+                <div>Price</div>
+                <div>Total Price</div>
+            </div>
+            <div class="cart-value">
+                <input type="button" id="bag" value="">
+                <input type="button" id="piece" value="">
+                <input type="button" id="price" value="">
+                <input type="button" id="final" value="0">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

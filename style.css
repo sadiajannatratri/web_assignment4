@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+}
+header{
+    background-color: lightslategray;
+    height: 8vh;
+    padding-top: 1vh;
+    text-align: center;
+}
+h1, a{
+    font-size: 3vw;
+    cursor: pointer;
+    display: inline-block;
+    margin-right: -10vw;
+}
+a{
+    text-decoration: none;
+    color: black;
+    float: right;
+    margin-right: 5vw;
+}
+.items{
+    padding: 10vh 10vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 3vw;
+    row-gap: 5vh;
+}
+.items div{
+    text-align: center;
+    border: 2px solid darkslategray;
+}
+img{
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+    display: block;
+}
+.items input, label, .cart-value input{
+    background-color: white;
+    border: none;
+    font-size: 1.5vw;
+    margin: 1vh;
+}
+.cal{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0vh 4vw;
+}
+.cal input{
+    cursor: pointer;
+    border: 1px solid black !important;
+}
+#add{
+    background-color: darkcyan;
+    width: 70%;
+    border-radius: 1vw;
+    margin-bottom: 2vh;
+    cursor: pointer;
+}
+#add:active{
+    background-color: lightseagreen;
+    color: white;
+}
+.cart{
+    border: 1px solid darkslategray;
+    margin: 0vh 10vw 5vh 10vw;
+    border-radius: 1vw;
+    font-size: 1.5vw;
+    text-align: center;
+}
+.cart-bar, .cart-value{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
